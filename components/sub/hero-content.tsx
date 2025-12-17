@@ -3,6 +3,8 @@
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { Typewriter } from "@/components/main/Typewriter";
+
 
 import {
   slideInFromLeft,
@@ -17,7 +19,7 @@ export const HeroContent = () => {
       animate="visible"
       className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
     >
-      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start text-center">
+      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto  text-start">
         <motion.div
           variants={slideInFromTop}
           className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]]"
@@ -30,16 +32,40 @@ export const HeroContent = () => {
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 mt-6 text-6xl text-bold text-white max-w-[600px] w-auto h-auto text-center"
+          className="flex flex-col gap-6 mt-6 text-6xl text-bold text-white max-w-[600px] w-auto h-auto text-start "
         >
           <span>
             {/* Providing{" "} */}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              Mohammed Daiyaan
+              <Typewriter
+              words={[
+                "Frontend Developer",
+                "Backend Developer",
+                "Robotics Developer",
+                "GUI Engineer",
+                "Open Source Contributor",
+              ]}
+            />
             </span>{" "}
             {/* project experience. */}
           </span>
         </motion.div>
+
+        {/* <motion.div
+            variants={slideInFromLeft(0.7)}
+            className="text-xl text-gray-300 mt-2 h-[32px]"
+          >
+            <Typewriter
+              words={[
+                "Frontend Developer",
+                "Backend Developer",
+                "Robotics Developer",
+                "GUI Engineer",
+                "Open Source Contributor",
+              ]}
+            />
+          </motion.div> */}
+
 
         <motion.p
           variants={slideInFromLeft(0.8)}

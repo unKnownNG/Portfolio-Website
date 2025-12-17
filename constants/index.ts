@@ -39,42 +39,6 @@ export const SKILL_DATA = [
     height: 80,
   },
   {
-    skill_name: "Redux",
-    image: "redux.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React Query",
-    image: "reactquery.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "TypeScript",
-    image: "ts.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Next.js 14",
-    image: "next.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Framer Motion",
-    image: "framer.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Stripe",
-    image: "stripe.png",
-    width: 80,
-    height: 80,
-  },
-  {
     skill_name: "Node.js",
     image: "node.png",
     width: 80,
@@ -108,54 +72,6 @@ export const SOCIALS = [
 
 export const FRONTEND_SKILL = [
   {
-    skill_name: "HTML",
-    image: "html.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "CSS",
-    image: "css.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "JavaScript",
-    image: "js.png",
-    width: 65,
-    height: 65,
-  },
-  {
-    skill_name: "Tailwind CSS",
-    image: "tailwind.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Material UI",
-    image: "mui.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React",
-    image: "react.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Redux",
-    image: "redux.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React Query",
-    image: "reactquery.png",
-    width: 80,
-    height: 80,
-  },
-  {
     skill_name: "TypeScript",
     image: "ts.png",
     width: 80,
@@ -167,30 +83,36 @@ export const FRONTEND_SKILL = [
     width: 80,
     height: 80,
   },
+  {
+    skill_name: "Pyhton",
+    image: "python-5.svg",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Solidity",
+    image: "solidity.svg",
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "Rust",
+    image: "rust.svg",
+    width: 80,
+    height: 80,
+  },
 ] as const;
 
 export const BACKEND_SKILL = [
   {
-    skill_name: "Node.js",
-    image: "node.png",
+    skill_name: "C",
+    image: "c.svg",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Express.js",
-    image: "express.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "MongoDB",
-    image: "mongodb.png",
-    width: 40,
-    height: 40,
-  },
-  {
-    skill_name: "Firebase",
-    image: "firebase.png",
+    skill_name: "C++",
+    image: "cpp.svg",
     width: 55,
     height: 55,
   },
@@ -206,33 +128,10 @@ export const BACKEND_SKILL = [
     width: 70,
     height: 70,
   },
-  {
-    skill_name: "Prisma",
-    image: "prisma.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Graphql",
-    image: "graphql.png",
-    width: 80,
-    height: 80,
-  },
 ] as const;
 
 export const FULLSTACK_SKILL = [
-  {
-    skill_name: "React Native",
-    image: "reactnative.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Tauri",
-    image: "tauri.png",
-    width: 70,
-    height: 70,
-  },
+  
   {
     skill_name: "Docker",
     image: "docker.png",
@@ -250,34 +149,35 @@ export const FULLSTACK_SKILL = [
 
 export const OTHER_SKILL = [
   {
-    skill_name: "Go",
-    image: "go.png",
-    width: 60,
-    height: 60,
+    skill_name: "Git",
+    image: "git.svg",
+    width: 50,
+    height: 50,
   },
+  
 ] as const;
 
 export const PROJECTS = [
   {
-    title: "Modern Next.js 14 Portfolio",
+    title: "MySQL Database Manager App",
     description:
-      'Embark on a journey through my professional evolution with the "Modern Next.js Portfolio" - a dynamic showcase of my skills, experiences, and passion for web development. Crafted with precision and powered by Next.js, this portfolio is more than just a static display; it\'s an immersive experience that reflects the cutting edge of modern web technologies.',
-    image: "/projects/project-1.png",
-    link: "https://example.com",
+      'The MySQL Database Manager App is a lightweight database administration tool developed to simplify interaction with MySQL databases. It provides a user-friendly interface for performing core database operations such as creating databases and tables, inserting, updating, deleting records, and executing SQL queries. The application abstracts repetitive SQL tasks while still allowing direct query execution, making it suitable for learning, rapid testing, and basic database management without relying on heavy third-party tools.',
+    image: "/projects/db_manager.jpg",
+    link: "https://github.com/unKnownNG/MySQL-Database-Manager",
   },
   {
-    title: "Interactive Cards Portfolio",
+    title: "ClusterX",
     description:
-      'Step into the extraordinary world of my professional journey through the "Interactive Cards Portfolio" - an innovative and visually captivating platform that redefines the traditional portfolio experience. Ditching the conventional static layout, this portfolio leverages interactive cards to showcase my skills, projects, and personality in an engaging and dynamic manner.',
-    image: "/projects/project-2.png",
-    link: "https://example.com",
+      'The Cluster App is a Python-based desktop dashboard built using CustomTkinter to centrally monitor and manage data from multiple Arduino and ESP-based boards. It aggregates real-time sensor and status data from several microcontrollers into a single, structured interface, enabling simultaneous visualization and comparison across devices. The application simplifies multi-board debugging, monitoring, and system-level analysis by providing a unified view of distributed hardware nodes.',
+    image: "/projects/cluster.jpeg",
+    link: "https://github.com/unKnownNG/Cluster-X",
   },
   {
-    title: "Space Themed Website",
+    title: "PGPA Website",
     description:
-      'Embark on an interstellar journey with my "Space Themed Website", a mesmerizing space-themed website that invites you to explore the cosmic wonders beyond our world. Immerse yourself in an awe-inspiring digital experience that blends cutting-edge design with the mysteries of the universe.',
-    image: "/projects/project-3.png",
-    link: "https://example.com",
+      'The PGPA App is an academic performance management application designed to calculate and track a student’s Program Grade Point Average (PGPA) efficiently. The app allows users to input subject-wise grades and credit values, automatically computes weighted averages, and presents the final PGPA in a clear and structured format. It focuses on accuracy, ease of use, and eliminating manual calculation errors, making it useful for students to monitor academic progress over multiple semesters.',
+    image: "/projects/pgpa.jpeg",
+    link: "https://github.com/unKnownNG/PGPA#",
   },
 ] as const;
 
@@ -360,5 +260,5 @@ export const NAV_LINKS = [
 ] as const;
 
 export const LINKS = {
-  sourceCode: "https://github.com/sanidhyy/space-portfolio",
+  sourceCode: "https://github.com/unknownng",
 };
